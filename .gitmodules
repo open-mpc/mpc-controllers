@@ -7,3 +7,6 @@
 [submodule "examples/mpc-launchcontrolxl-mk3"]
 	path = examples/mpc-launchcontrolxl-mk3
 	url = https://github.com/fuzboxz/mpc-launchcontrolxl-mk3.git
+[submodule "examples/mpc-launchpad-mini-mk3"]
+	path = examples/mpc-launchpad-mini-mk3
+	url = https://github.com/fuzboxz/mpc-launchpad-mini-mk3.git

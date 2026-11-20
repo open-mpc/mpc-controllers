@@ -9,9 +9,10 @@ Firmware is **MPC 3.10.1.8 (build 38fdde70994), Live III** unless noted.
 |---|---|---|---|
 | **LPP3** | [mpc-launchpad-pro-mk3](https://github.com/fuzboxz/mpc-launchpad-pro-mk3) (Novation Launchpad Pro MK3) | [@fuzboxz](https://github.com/fuzboxz) | device, 2026-11-17/18 |
 | **LCXL3** | [mpc-launchcontrolxl-mk3](https://github.com/fuzboxz/mpc-launchcontrolxl-mk3) (Novation Launch Control XL 3) | [@fuzboxz](https://github.com/fuzboxz) | device, 2026-11-18 (XL 3 fw 1.1.11) |
+| **LPMK3** | [mpc-launchpad-mini-mk3](https://github.com/fuzboxz/mpc-launchpad-mini-mk3) (Novation Launchpad Mini MK3) | [@fuzboxz](https://github.com/fuzboxz) | device, 2026-11-18 |
 | **NK** | [KorgNanoKontrolMk1_4_AkaiForce](https://github.com/kagusta1/KorgNanoKontrolMk1_4_AkaiForce) (Korg nanoKONTROL Mk1) | [@kagusta1](https://github.com/kagusta1) | device, **Akai Force, MPC 3.10.1.12**, 2026-11-16/17 |
 
-Thanks to fuzboxz for publishing the two Novation scripts, with device-test plans that make it clear which claims were
+Thanks to fuzboxz for publishing the Novation scripts, with device-test plans that make it clear which claims were
 checked on hardware, and to kagusta1 for the first script we know of running on a Force (and on a newer build than
 ours). LPP3 also used NK as a reference.
 
