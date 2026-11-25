@@ -11,7 +11,7 @@ written down so you can build your own controller support without redoing the di
 - **[skill/](skill/)**: a Claude skill that points an AI agent at the docs above.
 - **[examples/force-link](examples/force-link)**: a complete working controller (an Akai Force as a surface for an MPC Live III), as a git submodule.
 - **[examples/mpc-launchpad-pro-mk3](examples/mpc-launchpad-pro-mk3)** (v1.4.0): a Novation Launchpad Pro MK3 as a state-aware clip grid + pads surface for an MPC (clip colours, track row, Q-Link pages), as a git submodule.
-- **[examples/mpc-launchcontrolxl-mk3](examples/mpc-launchcontrolxl-mk3)** (v1.1.0): a Novation Launch Control XL 3 as a mixer + Q-Link surface driven through its DAW mode (two-way: MPC state painted onto encoder LEDs and OLED), as a git submodule.
+- **[examples/mpc-launchcontrolxl-mk3](examples/mpc-launchcontrolxl-mk3)** (v1.1.1): a Novation Launch Control XL 3 as a mixer + Q-Link surface driven through its DAW mode (two-way: MPC state painted onto encoder LEDs and OLED), as a git submodule.
 - **[examples/mpc-launchpad-mini-mk3](examples/mpc-launchpad-mini-mk3)** (v1.0.0): a Novation Launchpad Mini MK3 as a clip/state grid, mixer and fader-menu surface, as a git submodule.
 - **[Community scripts](#community-scripts)**: controller scripts other people have built from these notes.
 
@@ -50,7 +50,7 @@ Controller scripts built on this repo by other people. What we learned from them
 | Controller | Script | Author | Tested on |
 |---|---|---|---|
 | Novation Launchpad Pro MK3 (v1.4.0) | [mpc-launchpad-pro-mk3](https://github.com/fuzboxz/mpc-launchpad-pro-mk3) ([submodule](examples/mpc-launchpad-pro-mk3)): 8x8 clip launcher with live clip states, scenes, mixer pages, Q-link page, MPC pads mode, tempo/swing pages | [@fuzboxz](https://github.com/fuzboxz) | Live III, MPC 3.10.1.8 |
-| Novation Launch Control XL 3 (v1.1.0) | [mpc-launchcontrolxl-mk3](https://github.com/fuzboxz/mpc-launchcontrolxl-mk3) ([submodule](examples/mpc-launchcontrolxl-mk3)): faders/sends/pan mixer, encoders routed into the 16 Q-links (dot-form Twist driver), transport, OLED track map | [@fuzboxz](https://github.com/fuzboxz) | Live III, MPC 3.10.1.8, XL3 fw 1.1.11 |
+| Novation Launch Control XL 3 (v1.1.1) | [mpc-launchcontrolxl-mk3](https://github.com/fuzboxz/mpc-launchcontrolxl-mk3) ([submodule](examples/mpc-launchcontrolxl-mk3)): faders/sends/pan mixer, encoders routed into the 16 Q-links (dot-form Twist driver), transport, OLED track map | [@fuzboxz](https://github.com/fuzboxz) | Live III, MPC 3.10.1.8, XL3 fw 1.1.11 |
 | Novation Launchpad Mini MK3 (v1.0.0) | [mpc-launchpad-mini-mk3](https://github.com/fuzboxz/mpc-launchpad-mini-mk3) ([submodule](examples/mpc-launchpad-mini-mk3)): clip/state grid with live colours, scene column, mixer and fader-menu pages | [@fuzboxz](https://github.com/fuzboxz) | Live III, MPC 3.10.1.8 |
 | Ableton Move (Schwung) | [mpc-control-script-move](https://github.com/ryanmgilmore/mpc-control-script-move) + [move-mpc-control](https://github.com/ryanmgilmore/move-mpc-control): pads, clip launcher, step sequencer, Q-links, over one USB cable | [@ryanmgilmore](https://github.com/ryanmgilmore) | Live II, MPC 3.10.1 |
 | Korg nanoKONTROL (Mk1) | [KorgNanoKontrolMk1_4_AkaiForce](https://github.com/kagusta1/KorgNanoKontrolMk1_4_AkaiForce): volume, pan, mute, cue, transport, view switching | [@kagusta1](https://github.com/kagusta1) | Force, MPC 3.10.1.12 |
