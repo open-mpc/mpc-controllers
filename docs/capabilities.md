@@ -18,6 +18,8 @@ device tests. Verified on 3.10.0.49 and 3.10.1.8 unless noted.
 - `OnLoad` runs when the device connects and can run more than once; guard your registrations.
 - Scripts are read from internal storage only, once at startup: restart MPC after copying. MPC 3.10.1's developer
   mode (Preferences > Enhancements) gives SSH on a Live II (COMMUNITY C17).
+- **Native code:** `io` and `os` are nil, but `package.loadlib(path, symbol)` loads a native library into MPC and
+  calls it; a script with no `input=`/`output=` lines still runs at every MPC start, so it can be a boot hook (FINDINGS 35).
 - **Cost:** each native function call takes ~2.9 ms; property reads are free. Budget calls per tick (COMMUNITY C12).
 
 ## API by task
@@ -39,6 +41,7 @@ device tests. Verified on 3.10.0.49 and 3.10.1.8 unless noted.
 | Switch views | `engineMode.RequestModeChange(name)`; names follow the menu labels (`"Clip Editor"`, `"List Edit"`), list them with `GetAvailableModes()` (COMMUNITY C11) |
 | Hand a button to a native control at runtime | `RemoveCCToScript`, then `mappings.controlSurface.AddCCToControl(ch, cc, "Tap Tempo")`; reverse on release (COMMUNITY C8) |
 | Quantise, loop, automation | `sequencer.quantiser.{Get,Set}{Swing,Strength,TimeDivision,...}`, `sequencer.SetLoop`, `project.AdvanceGlobalAutomationFilterType()` |
+| Run native code (files, commands, services) | `package.loadlib(dir .. "lib.so", "fn")()`; find `dir` with `debug.getinfo(1, "S").source`. Start long-lived work with `systemd-run`, or it dies with MPC (FINDINGS 35) |
 | Everything else | [api-reference.md](api-reference.md): every name on 3.10.1.8, from fuzboxz's table dump (COMMUNITY C1) |
 
 ## Useful facts
